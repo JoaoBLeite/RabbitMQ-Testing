@@ -7,3 +7,8 @@ rabbit-mq:
   request:
     exchange: email_notification_exchange
     rout-key: email_notification_rout_key
+  response:
+    success:
+      queue: email_notification_response_success_queue
+    error:
+      queue: email_notification_response_error_queue

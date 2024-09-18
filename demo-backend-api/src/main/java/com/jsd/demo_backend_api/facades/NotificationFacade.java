@@ -22,4 +22,12 @@ public class NotificationFacade {
 
         return "Sending email requested...";
     }
+
+    public void successResponse(String payload) {
+        System.out.println("# Success Message: " + payload);
+    }
+
+    public void errorResponse(String payload) {
+        System.err.println("& Error Message: " + payload);
+    }
 }
