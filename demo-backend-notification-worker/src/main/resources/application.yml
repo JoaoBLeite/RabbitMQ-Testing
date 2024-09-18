@@ -1,0 +1,15 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: demo-backend-notification-worker
+rabbit-mq:
+  request:
+    queue: email_notification_queue
+  response:
+    error:
+      exchange: email_notification_response_error_exchange
+      rout-key: email_notification_response_error_rout_key
+    success:
+      exchange: email_notification_response_success_exchange
+      rout-key: email_notification_response_success_rout_key
