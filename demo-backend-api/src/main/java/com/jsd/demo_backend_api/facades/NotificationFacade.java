@@ -12,7 +12,7 @@ public class NotificationFacade {
 
     private final NotificationRequestProducer producer;
 
-    public String sendEmail(NotificationDTO notificationDTO) {
+    public String sendMessage(NotificationDTO notificationDTO) {
 
         try {
             producer.integration(notificationDTO);

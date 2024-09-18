@@ -3,7 +3,6 @@ package com.jsd.demo_backend_api.controllers;
 import com.jsd.demo_backend_api.facades.NotificationFacade;
 import com.jsd.demo_backend_api.model.NotificationDTO;
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,7 +18,7 @@ public class NotificationController {
 
     @PostMapping
     public ResponseEntity<String> sendEmail(@RequestBody NotificationDTO notificationDTO) {
-        String response = notificationFacade.sendEmail(notificationDTO);
+        String response = notificationFacade.sendMessage(notificationDTO);
         return ResponseEntity.ok(response);
     }
 }
