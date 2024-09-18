@@ -12,7 +12,7 @@
 	<artifactId>demo-backend-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo-backend-api</name>
-	<description>Spring Backend API</description>
+	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>

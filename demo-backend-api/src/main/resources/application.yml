@@ -1,1 +1,9 @@
-spring.application.name=demo-backend-api
+server:
+  port: 8080
+spring:
+  application:
+    name: demo-backend-api
+rabbit-mq:
+  request:
+    exchange: email_notification_exchange
+    rout-key: email_notification_rout_key
