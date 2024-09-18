@@ -3,6 +3,17 @@ server:
 spring:
   application:
     name: demo-backend-notification-worker
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 rabbit-mq:
   request:
     queue: email_notification_queue
