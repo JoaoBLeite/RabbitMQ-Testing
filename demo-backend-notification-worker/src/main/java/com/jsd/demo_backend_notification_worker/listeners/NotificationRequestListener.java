@@ -21,9 +21,9 @@ public class NotificationRequestListener {
     public void receiveMessage(@Payload Message message) {
         System.out.println(message.getPayload());
         if (new Random().nextBoolean()) {
-            successProducer.generateSuccessResponse("Email sent with success" + message);
+            successProducer.generateSuccessResponse("Email sent with success " + message.getPayload());
         } else {
-            errorProducer.generateErrorResponse("Email notification failed!" + message);
+            errorProducer.generateErrorResponse("Email notification failed! " + message.getPayload());
         }
     }
 
