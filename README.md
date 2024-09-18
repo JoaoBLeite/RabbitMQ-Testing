@@ -45,6 +45,15 @@ Bind the exchanges to the queues using the following routing keys:
 - ``` email_notification_response_success_rout_key ```
 - ``` email_notification_response_error_rout_key ```
 
+## Service demo-backend-notification-worker Setup
+
+In the ``` application.yml ``` file make sure to replace the environment variables or create them with your own personal values. This way the application will have access to an email to send emails.
+
+```sh
+username: ${MAIL_USERNAME}
+password: ${MAIL_PASSWORD}
+```
+
 ## Testing the Setup
 
 ### Run services
