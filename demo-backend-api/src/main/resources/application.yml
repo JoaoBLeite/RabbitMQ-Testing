@@ -12,3 +12,8 @@ rabbit-mq:
       queue: email_notification_response_success_queue
     error:
       queue: email_notification_response_error_queue
+springdoc:
+  pathsToMatch:
+    /api/**
+  swagger-ui:
+    use-root-path: true
