@@ -15,6 +15,14 @@ docker run -d \
   rabbitmq:3.8.6-management
 ```
 
+If the container is already created but just stopped, you can start it using:
+
+```sh
+docker start rabbit-server
+```
+
+This will bring the existing container back up without needing to create a new one.
+
 ### Access the Admin Console
 
 - URL: localhost:15672
