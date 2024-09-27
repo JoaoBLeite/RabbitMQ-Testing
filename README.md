@@ -92,6 +92,14 @@ Inspect the logs of both applications to verify the message flow and ensure that
 
 ``` demo-backend-api ``` Logs: Check for the incoming messages and email sending status.
 
+## Finishing Project execution
+
+### After finishing testing the project, run the following command to stop RabbitMQ Docker container
+
+```sh
+docker stop rabbit-server
+```
+
 ## Troubleshooting
 
 - RabbitMQ Not Starting: Ensure Docker is running and there are no port conflicts.
