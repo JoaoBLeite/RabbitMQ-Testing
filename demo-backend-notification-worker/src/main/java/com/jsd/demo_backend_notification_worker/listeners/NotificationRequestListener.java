@@ -39,8 +39,6 @@ public class NotificationRequestListener {
         } else {
             errorProducer.generateErrorResponse("Email notification failed! " + payload);
         }
-
-        int debug = 1 + 2;
     }
 
 }
